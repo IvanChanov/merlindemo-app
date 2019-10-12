@@ -24,9 +24,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "../angular-app/node_modules/font-awesome/css/font-awesome.css",
+              "../angular-app/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../angular-app/node_modules/jquery/dist/jquery.js",
+              "../angular-app/node_modules/popper.js/dist/umd/popper.js",
+              "../angular-app/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
