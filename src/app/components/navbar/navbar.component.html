@@ -1,10 +1,29 @@
 <nav class="navbar navbar-expand navbar navbar-dark bg-white mb-4">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" routerLink="/">
             <img src="../../../assets/images/rbbg.JPG" alt="">
         </a>
         <a routerLink="/" class="navbar-brand">
             MerlinDemoApp
         </a>
+        <div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a routerLink="/" class="nav-link text-dark">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a routerLink="/appdata" class="nav-link text-dark">ApplicationData Section</a>
+                </li>
+
+                <li class="nav-item">
+                    <a routerLink="/ccagenda"  class="nav-link text-dark">CCAgenda Section</a>
+                </li>
+
+                <li class="nav-item">
+                    <a routerLink="/ccapproval"  class="nav-link text-dark">CCApproval Section</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>

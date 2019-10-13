@@ -8,6 +8,8 @@ import { ApplicationdataComponent } from './components/applicationdata/applicati
 import { CcapprovalComponent } from './components/ccapproval/ccapproval.component';
 import { CcagendaComponent } from './components/ccagenda/ccagenda.component';
 import { DataService } from './services/data.service';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { DataService } from './services/data.service';
     NavbarComponent,
     ApplicationdataComponent,
     CcapprovalComponent,
-    CcagendaComponent
+    CcagendaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

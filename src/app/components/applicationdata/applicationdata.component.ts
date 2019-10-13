@@ -10,17 +10,14 @@ import { ApplicationData } from '../../model/ApplicationData';
 export class ApplicationdataComponent implements OnInit {
 
   applicationData: string;
-  ccApprovalData: string;
-  ccAgendaData: string;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-
-  this.dataService.getCCAgenda().subscribe(ccAgendaData =>{
-    this.ccAgendaData = ccAgendaData;
+  this.dataService.getApplicationData({'title': 'body'}).subscribe(applicationData => {
+    console.log(applicationData);
   })
-
+  
   }
 
 }

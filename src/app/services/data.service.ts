@@ -23,14 +23,14 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getApplicationData(): Observable<string>
+  getApplicationData(request: any): Observable<string>
   {
-    return this.http.post<string>(this.dataUrl+this.applicationDataURI, httpOptions);
+    return this.http.post<string>(this.dataUrl+this.applicationDataURI,request, httpOptions);
   }
 
-  getCCApproval(): Observable<string>
+  getCCApproval(request: any): Observable<string>
   {
-    return this.http.post<string>(this.dataUrl+this.ccApprovalURI, httpOptions);
+    return this.http.post<string>(this.dataUrl+this.ccApprovalURI,request, httpOptions);
   }
 
   getCCAgenda(): Observable<string>

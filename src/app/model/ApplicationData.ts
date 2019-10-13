@@ -1,4 +1,4 @@
-export interface ApplicationData
+export class ApplicationData
 {
     gcc: {
         gccId: string,

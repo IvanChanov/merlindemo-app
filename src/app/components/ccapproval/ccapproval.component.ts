@@ -1,4 +1,6 @@
+import { CCApproval } from './../../model/CCApproval';
 import { Component, OnInit } from '@angular/core';
+import { DataService } from './../../services/data.service';
 
 @Component({
   selector: 'app-ccapproval',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CcapprovalComponent implements OnInit {
 
-  constructor() { }
+  ccApprovalData: string;
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.dataService.getCCApproval({'title': 'body'}).subscribe(ccApprovalData => {
+      console.log(ccApprovalData);
+    })
+
   }
 
 }
